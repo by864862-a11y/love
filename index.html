@@ -1,5 +1,4 @@
-
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><title>ليكي بس ❤️</title>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><title>ليكي بس ❤️</title>
 <style>
 body{background:linear-gradient(pink,#ff99cc);text-align:center;padding:50px;font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
 .box{background:white;padding:40px;border-radius:20px;box-shadow:0 0 20px rgba(0,0,0,0.2)}
@@ -25,4 +24,18 @@ input{padding:12px;border:2px solid pink;border-radius:10px;font-size:16px;text-
   <h1>سامحيني</h1>
   <p>ده قلبي بين ايديكي</p>
   <button onclick="m.play()">دوسي هنا شغلي الأغنية 🎵</button>
-  <audio
+  <audio id="m" loop src="https://ia800905.us.archive.org/25/items/RaghebAlamaAlbiAshiqha/Ragheb%20Alama%20-%20Albi%20Ashiqha.mp3"></audio>
+</div>
+
+<script>
+function check(){
+  if(document.getElementById('pass').value.toLowerCase() === 'love'){
+    document.getElementById('login').classList.add('hidden');
+    document.getElementById('main').classList.remove('hidden');
+  } else {
+    document.getElementById('error').innerText = 'كلمة السر غلط جربي love';
+  }
+}
+</script>
+
+</body></html>
